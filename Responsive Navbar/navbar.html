@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navbar with Pure HTML5 & CCS3</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script>
+
+        function showNav() {
+
+            document.getElementById("mobile").style.display = "block";
+        }
+        function hideNav() {
+
+            document.getElementById("mobile").style.display = "none";
+        }
+    </script>
+</head>
+<!-- hey its me bims  -->
+<!-- navbar -->
+<header class="main-container">
+
+    <div onclick="showNav()" class="menu"><i class="fa fa-bars fa-2x"></i></div>
+
+
+    <div class="logo">
+        <p>Navbar</p>
+    </div>
+
+    <nav id="mobile">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">SERVICE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT US</a></li>
+            <li><a href="">ABOUT</a></li>
+        </ul>
+        <div onclick="hideNav()" class="close-btn"><i class="fa fa-times fa-2x"></i></div>
+
+    </nav>
+</header>
+
+
+</body>
+
+</html>
