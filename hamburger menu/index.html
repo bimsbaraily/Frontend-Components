@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hamburger menu</title>
+</head>
+<style>
+    body{
+        font-family:pacifico;
+    }
+    .sidenavbar{
+        display:grid;
+        width:0px;
+        height:100vh;
+        background:purple;
+        overflow-x:hidden;
+        z-index: 1;
+        top:0;
+        left:0;
+        color:yellow;
+        position:relative;
+        justify-content:center;
+        text-align:center;
+        font-size:33px;
+        transition: 3s all;
+        margin:0px;
+        padding:0px;
+        box-shadow:0px 10px 10px 2px grey;
+        border-radius:0px 10px 10px 0px;
+    }
+    .sidenavbar a{
+        display:block;
+        margin:1px;
+    }
+
+    
+.icon{
+    width:20px;
+    height:20px;
+    color:white;
+    position:absolute;
+    top:5px;
+    right:15px;
+    fill:;
+}
+.open{
+    width:30px;
+                      height:30px;
+                      position:absolute;
+                      top:5px;
+                      right:5px;
+                      z-index-1;
+}
+svg{
+    fill:currentColor;
+}
+.closebutton{
+    color:chartreuse;
+}
+</style>
+<body>
+    <div id="sidebar" class="sidenavbar">
+        <a class="closebutton">
+            <svg  onclick="closeNav()" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.557 15.557">
+                <defs>
+                  
+                </defs>
+                <path id="Union_3" data-name="Union 3" class="cls-1" d="M7.778,9.192,1.414,15.557,0,14.142,6.364,7.778,0,1.414,1.414,0,7.778,6.364,14.142,0l1.415,1.414L9.192,7.778l6.364,6.364-1.415,1.415Z"/>
+              </svg>
+              
+        </a>
+        <a>HOME</a>
+        <a>PORTMAN</a>
+        <a>BUSSINESS</a>
+        <a>ABOUT</a>
+    </div>
+
+    <span class="opennav" onclick="openNav()">
+
+            <svg  class="open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 14">
+                <defs>
+                 
+                 
+                </defs>
+                <path id="Menu" class="cls-1" d="M-6160,14V12h10v2Zm0-6V6h16V8Zm0-6V0h16V2Z" transform="translate(6160)"/>
+              </svg>
+    </span>
+    <script>
+    
+    function openNav(){
+        document.getElementById("sidebar").style.width="50%";
+    }
+    function closeNav(){
+        document.getElementById("sidebar").style.width="0";
+    }
+    </script>
+    
+</body>
+</html>
