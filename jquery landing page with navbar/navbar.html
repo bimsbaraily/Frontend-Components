@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet">
+    <title>Document</title>
+
+
+</head>
+
+
+<body>
+
+
+
+    <!-- navbar section -->
+    <div class="navbar-outer">
+
+
+        <div class="upper">
+            <span class="fas fa-stream fa-2x"></span>
+            <span class="left">jquery</span>
+        </div>
+
+
+        <div class="lower">
+
+            <nav>
+                <li>HOME</li>
+                <li>SERVICE</li>
+                <li>CONTACT</li>
+                <li>ABOUT</li>
+                <li>BLOG</li>
+                <li>PORTFOLIO</li>
+            </nav>
+
+            <div class="cancel-btn">
+                <i id="close" class="fa  fa-window-close fa-3x" aria-hidden="true"></i>
+            </div>
+
+        </div>
+    </div>
+    <!-- navabar section end -->
+
+    <!-- main section start -->
+
+
+    <section class="banner-outer">
+        <div class="banner-inner">
+            <article>
+                <h1>jQuery<br>Write Less Do More</h1>
+
+                <p>A jQuery plugin is simply a new method that we use to extend jQuery's prototype object. By
+                    extending<br>
+                    the prototype
+                    object you enable all jQuery objects to inherit any methods that<br> you add. As established,
+                    whenever
+                </p>
+                <button class="modal-btn">Download CDN</button>
+            </article>
+            <div class="banner-img-container">
+                <img class="banner-img" width="400px" height="400px"
+                    src="https://cdn-images-1.medium.com/max/1600/0*g3ns8QALNBBH7CBA.">
+            </div>
+        </div>
+        <div class="modal-container">
+            <div class="modal">
+                <div class="modal-content">
+                    <h4>Modal Box With HTMl CSS AND JQUERY</h4>
+                    <p>Google CDN<br>
+                        <p>https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></p>
+                    </p>
+                    <p>Google CDN<br>
+                        <code>"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"</code>
+                    </p>
+                    <p>Google CDN<br>
+                        <code>"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></code>
+                    </p>
+
+                </div>
+
+
+            </div>
+            <div class="close-btn"><i class="fa fa-window-close fa-4x" aria-hidden="true"></i></div>
+
+        </div>
+    </section>
+
+    <!-- Feature section -->
+
+    <section class="feature-outer">
+        <h2 style="text-align:center;color:white;font-size:44px;">Features</h2>
+        <div class="feature-inner">
+
+            <div class="feature-card">
+                <h5>LIGHT WEIGHT</h5>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum impedit atque,
+                    dolores labore doloremque ullam inventore ducimus aspernatur
+                    quis velit debitis at quibusdam ut alias quia beatae in expedita facilis!</P>
+                <button class="btn">Learn More</button>
+            </div>
+
+            <div class="feature-card">
+                <h5>LIGHT WEIGHT</h5>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum impedit atque,
+                    dolores labore doloremque ullam inventore ducimus aspernatur
+                    quis velit debitis at quibusdam ut alias quia beatae in expedita facilis!</P>
+                <button class="btn">Learn More</button>
+            </div>
+
+
+            <div class="feature-card">
+                <h5>LIGHT WEIGHT</h5>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum impedit atque,
+                    dolores labore doloremque ullam inventore ducimus aspernatur
+                    quis velit debitis at quibusdam ut alias quia beatae in expedita facilis!</P>
+                <button class="btn">Learn More</button>
+            </div>
+
+            <div class="feature-card">
+                <h5>LIGHT WEIGHT</h5>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum impedit atque,
+                    dolores labore doloremque ullam inventore ducimus aspernatur
+                    quis velit debitis at quibusdam ut alias quia beatae in expedita facilis!</P>
+                <button class="btn">Learn More</button>
+            </div>
+            <div class="feature-card">
+                <h5>LIGHT WEIGHT</h5>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum impedit atque,
+                    dolores labore doloremque ullam inventore ducimus aspernatur
+                    quis velit debitis at quibusdam ut alias quia beatae in expedita facilis!</P>
+                <button class="btn">Learn More</button>
+            </div>
+            <div class="feature-card">
+                <h5>LIGHT WEIGHT</h5>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum impedit atque,
+                    dolores labore doloremque ullam inventore ducimus aspernatur
+                    quis velit debitis at quibusdam ut alias quia beatae in expedita facilis!</P>
+                <button class="btn">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+
+        // DOM manipulation section
+        $(document).ready(function () {
+            $(".fa-stream").click(function () {
+                $(".lower").fadeToggle(1000);
+            })
+        })
+
+        $(document).ready(function () {
+            $(".fa-window-close ").click(function () {
+                $(".lower").fadeOut();
+            })
+        })
+
+        $(document).ready(function () {
+            $(".modal-btn").click(function () {
+                $(".modal-container").slideDown(1000);
+            })
+        })
+
+        $(document).ready(function () {
+            $(".close-btn").click(function () {
+                $(".modal-container").slideUp();
+            })
+        })
+
+        // styling a elment with jquery
+
+
+        $("h4").css
+            ({
+                "color": "grey",
+                "font-size": "23px",
+                "background": "black",
+                "padding-top": "30px",
+                "margin-top": "-30px",
+                "text-align": "center",
+                "padding-bottom": "10px"
+
+
+
+
+            });
+
+        // styling modal with jquery
+
+        $(".modal").css({
+            "background": "pink",
+
+            "margin": "auto",
+            "padding-top": "5px",
+            "text-align": "center",
+            "border-radius": "10px",
+            "margin-top": "300px",
+            "box-shadow": "0px 5px 35px 1px rgba(0,0,0,0.5)"
+
+
+        });
+        $(".close-btn").css({
+            "position": "absolute",
+            "top": "20px",
+            "right": "34px"
+        });
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
